@@ -1,4 +1,3 @@
-
 import cv2
 from tensorflow import keras
 import numpy as np
@@ -15,9 +14,7 @@ previous_prediction_c = 0
 while(True):
     frame_count += 1
     _, img = camera.read()
-
     img = imutils.resize(img, width=1000)
-
     box = np.array([50, 50, 350, 350])
     (startX, startY, endX, endY) = box.astype("int")
     cv2.rectangle(img, (startX, startY), (endX, endY), (0, 255, 0), 1)
@@ -36,7 +33,6 @@ while(True):
             i = f"{prediction_c[0]}"
             serialcomm.write(i.encode())
             time.sleep(0.5)
-
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 vid.release()
