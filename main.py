@@ -33,8 +33,12 @@ while(True):
             i = f"{prediction_c[0]}"
             serialcomm.write(i.encode())
             time.sleep(0.5)
+            
     if cv2.waitKey(1) & 0xFF == ord('q'):
+        i = '5'
+        serialcomm.write(i.encode())
+        time.sleep(1)
         break
-vid.release()
+camera.release()
 serialcomm.close()
 cv2.destroyAllWindows()
