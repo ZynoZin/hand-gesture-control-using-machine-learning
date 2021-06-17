@@ -3,7 +3,8 @@
 ## Introduction
 This work represents our final project for our first year in ENSIAS, it's about controlling an Arduino Uno robot using the Deeo Learning algorithm: CNN. This project can be used for other similar cases.
 
-## Robot building (coming soon)
+## Robot building
+Upload the ```runTheMotors.ino``` to your Arduino Uno, make sure it's always ON as well as the bluetooth connected to it.
 
 ## Classes
 ### void
