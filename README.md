@@ -30,7 +30,7 @@ model.add(Flatten())
 model.add(Dense(6, activation = 'softmax'))
 ```
 # Execution
-Make sure your robot has a bluetooth connection, connect to it using your laptop or any PC that has a webcam. Check which ports the robot is connected to and change it's value in ```main.py``` here:
+Make sure your robot has a bluetooth connection, connect to it using your laptop or any PC that has a webcam. Check which ports the robot is connected to and change its value in ```main.py``` here:
 ```py
 serialcomm = Serial('COM6', 9600)
 ```
