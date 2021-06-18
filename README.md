@@ -8,7 +8,7 @@ Upload the ```runTheMotors.ino``` to your Arduino Uno, make sure it's always ON 
 
 ## Classes
 ### void
-there is no hands in the frame, in this case the robot shouldn't do any changes to his actual state.
+there are no hands in the frame, in this case the robot shouldn't do any changes to his actual state.
 ### Forward
 The robot moves forward :raised_hand:
 ### Backward
