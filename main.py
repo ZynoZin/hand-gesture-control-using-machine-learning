@@ -27,13 +27,13 @@ while(True):
         resized = resized / 255.0
         resized = resized.reshape(-1, 100, 100, 1)
         prediction_c = model.predict_classes(resized)
-        # 0= backward - 1 = forward - 2 = left - 3 = right - 4 = stop
+        # 0= background - 1 = backward - 2 = forward - 3 = left - 4 = right - 6 = stop
         if(prediction_c != previous_prediction_c):
             previous_prediction_c = prediction_c
             i = f"{prediction_c[0]}"
             serialcomm.write(i.encode())
             time.sleep(0.5)
-            
+
     if cv2.waitKey(1) & 0xFF == ord('q'):
         i = '5'
         serialcomm.write(i.encode())
